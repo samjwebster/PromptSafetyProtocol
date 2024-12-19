@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/afs/crc.nd.edu/user/s/swebster/Private/SecureSoftwareEngineering/process_prompts.py", line 85, in <module>
+    main(verbose_safety_report, file_tag, rejection_mode, selected_dataset)
+  File "/afs/crc.nd.edu/user/s/swebster/Private/SecureSoftwareEngineering/process_prompts.py", line 22, in main
+    safety_protocol = PromptSafetyProtocol(rejection_mode=rejection_mode, rejection_threshold=rejection_threshold, verbose=verbose_safety_report)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/afs/crc.nd.edu/user/s/swebster/Private/SecureSoftwareEngineering/safety_protocol.py", line 78, in __init__
+    if rejection_threshold != None and rejection_threshold >= 0.0:
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'str' and 'float'
